@@ -1,87 +1,90 @@
-# 🧠 Algorithm Visualizer
+# Algorithm Visualizer
 
-An interactive web application to **visually demonstrate classic algorithms** like sorting, searching, and pathfinding through real-time animations. Built using **Next.js**, **Framer Motion**, and **Tailwind CSS**, this tool helps learners understand how algorithms work internally via intuitive visuals.
+An interactive web app to see how classic algorithms work, step by step. Built with Next.js and a clean dark slate theme.
 
----
+## Features
 
-## 🚀 Live Demo
+### Sorting Visualizer
+Watch bars get sorted with colour-coded comparisons.
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Quick Sort
+- Merge Sort
+- Heap Sort
+- Counting Sort
+- Radix Sort
 
-👉 [View Live Project](https://algorithm-visualizer-apdev.netlify.app/)  
+Includes time and space complexity info for each algorithm.
 
----
+### Search Visualizer
+- Linear Search
+- Binary Search (works on a sorted list)
 
-## 📸 Preview
+### Pathfinding Visualizer
+- Breadth-First Search (BFS)
+- Depth-First Search (DFS)
 
-![Algorithm Visualizer Demo](./public/demo.png)  
+Click cells on the grid to add or remove walls.
 
----
+### Controls
+- Adjustable array size / cell size
+- Adjustable animation speed
+- Generate a new array or reset the grid at any time
 
-## 🛠 Tech Stack
+## Tech Stack
 
-- **Next.js (JavaScript)** – App framework  
-- **Tailwind CSS** – Styling  
-- **Framer Motion** – Animations  
-- **Lucide React** – Icons  
-- **React Context API** – State management  
-- **Node.js + Express** *(Optional)* – Backend server  
-- **MongoDB** *(Optional)* – For storing custom runs or analytics  
+- [Next.js](https://nextjs.org/) (App Router)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide Icons](https://lucide.dev/)
 
----
+## Getting Started
 
-## 📊 Supported Algorithms
+### Prerequisites
+- Node.js 18 or later
+- npm (or yarn / pnpm)
 
-### 🔁 Sorting
-- Quick Sort  
-- Merge Sort  
-- Heap Sort  
-- Selection sort 
-- Bubble sort 
-- Insertion sort 
-- Counting sort 
-- Radix sort
+### Installation
 
-### 🔎 Searching
-- Linear Search  
-- Binary Search  
+```bash
 
-### 🌐 Pathfinding
-- Breadth-First Search (BFS)  
-- Depth-First Search (DFS)  
-- A* Search  
 
----
-
-## ✨ Features
-
-- 🎥 Real-time algorithm visualization  
-- 🕹️ Interactive controls (speed, size, reset, pause)  
-- 📊 Step-by-step comparisons, swaps, and traversal  
-- 📱 Fully responsive UI  
-- ℹ️ Info modals with algorithm details (complexity, logic, pseudocode)  
-
----
-
-## 💻 Getting Started
-
-### 1. Clone & Install
-
-```
-git clone https://github.com/your-username/algorithm-visualizer.git
-cd algorithm-visualizer
+# install dependencies
 npm install
+
+# start the dev server
 npm run dev
 ```
-## 🧠 Future Scope
-- Add advanced algorithms (e.g., Dijkstra's, Bellman-Ford)
-- User authentication & saved sessions
-- Leaderboard for optimal solutions
-- Export visualizations as GIFs or videos
-- Toggle between light/dark themes
 
-## 📄 License
-This project is licensed under the MIT License.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 🙌 Credits
-- Built with 💻 by Aditya Pippal
-- Icons by Lucide.dev
-- Animations powered by Framer Motion
+## Project Structure
+
+```
+app/
+├── page.jsx            # Home page
+├── sorting/page.jsx    # Sorting visualizer
+├── searching/page.jsx  # Search visualizer
+└── pathfinding/page.jsx # Pathfinding visualizer
+```
+
+## Colour Legend
+
+| Colour | Meaning |
+| ------ | ------- |
+| Lavender | Unsorted / unsearched |
+| Amber | Currently comparing / checking |
+| Mint green | Sorted / found / final path |
+
+## Roadmap
+
+- [ ] A* Search for the pathfinding visualizer
+- [ ] Draggable start and end nodes
+- [ ] More sorting and graph algorithms
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
